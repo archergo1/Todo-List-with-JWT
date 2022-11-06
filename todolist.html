@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>線上待辦事項服務</title>
+    <link rel="stylesheet" href="./scss/style.css" />
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="nav">
+        <img src="./pictures/logo_lg.svg" alt="logo" class="logo" />
+        <!-- <img src="./pictures/王小明的代辦.svg" alt="username" class="username"/> -->
+        <div class="user_area">
+          <h2><span class="nickname"></span>的待辦</h2>
+          <a href="#" class="sign_out">登出</a>
+        </div>
+      </div>
+      <div class="container">
+        <div class="card input">
+          <input
+            type="text"
+            class="inputText"
+            placeholder="請輸入待辦事項"
+            id="inputText"
+          />
+          <a href="#" class="addBtn" id="addBtn">+</a>
+        </div>
+        <div class="card cardList">
+          <ul class="tab" id="tab">
+            <li class="active" data-tab="all">全部</li>
+            <li data-tab="work">待完成</li>
+            <li data-tab="done">已完成</li>
+          </ul>
+          
+          <div class="cartContent">
+            <ul class="list" id="todoList">
+              <!-- <li>
+                <label for="" class="checkbox">
+                  <input type="checkbox" />
+                  <span>把冰箱拿去丟</span>
+                </label>
+                <a href="#" class="delete"></a>
+              </li> -->
+            </ul>
+            <div class="listFooter">
+              <p><span id="workNum">0</span>個待完成項目</p>
+              <a href="#" id="clearBtn">清除已完成項目</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.js"></script>
+  <script src="./JS/todolist.js"></script>
+</html>
+
+
+
+
+
